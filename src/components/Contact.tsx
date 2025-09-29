@@ -1,5 +1,6 @@
 "use client";
 
+import { Mail, MapPin, Phone } from "lucide-react";
 import { useState } from "react";
 
 const Contact = () => {
@@ -43,33 +44,30 @@ const Contact = () => {
               >
                 Get in Touch
               </h3>
-              <p style={{ marginBottom: "2rem" }}>
+              <p className="mb-4">
                 Ready to partner with us for your healthcare solutions needs?
                 Contact our team to discuss how TOP ADVANCED MEDICAL can support
                 your organization.
               </p>
-              <div style={{ marginBottom: "1rem" }}>
-                <i
-                  className="fas fa-envelope"
-                  style={{ color: "var(--primary-blue)", marginRight: "10px" }}
-                ></i>
-                <span>Info@topadvanced.sa</span>
-              </div>
-              <div style={{ marginBottom: "1rem" }}>
-                <i
-                  className="fas fa-phone"
-                  style={{ color: "var(--primary-blue)", marginRight: "10px" }}
-                ></i>
+              <a
+                href="mailto:Info@topadvanced.sa"
+                className="flex items-center gap-2 mb-4"
+              >
+                <Mail className="w-4 h-4 text-primary-blue" />
 
+                <span>Info@topadvanced.sa</span>
+              </a>
+              <a
+                href="tel:+966509272437"
+                className="flex items-center gap-2 mb-4"
+              >
+                <Phone className="w-4 h-4 text-primary-blue" />
                 <span>+966 50 927 2437</span>
-              </div>
-              <div>
-                <i
-                  className="fas fa-map-marker-alt"
-                  style={{ color: "var(--primary-blue)", marginRight: "10px" }}
-                ></i>
+              </a>
+              <a href="#contact" className="flex items-center gap-2 mb-4">
+                <MapPin className="w-4 h-4 text-primary-blue" />
                 <span>Saudi Arabia</span>
-              </div>
+              </a>
             </div>
           </div>
           <div className="col-span-2 w-[80%] mx-auto">
