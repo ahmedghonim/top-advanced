@@ -35,7 +35,7 @@ const Contact = () => {
         <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-center text-dark-navy mb-12 relative section-divider">
           Contact Us
         </h2>
-        <div className="grid grid-cols-3 items-center justify-between gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-between gap-8">
           <div className="col-span-1">
             <div className="fade-in">
               <h3
