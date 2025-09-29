@@ -15,12 +15,12 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "TOP ADVANCED - Healthcare Solutions Provider",
+  title: "TOP ADVANCED MEDICAL - Healthcare Solutions Provider",
   description:
-    "TOP ADVANCED is a leading healthcare solutions provider specializing in medical devices, consumables, and cutting-edge healthcare technologies with local manufacturing capabilities.",
+    "TOP ADVANCED MEDICAL is a leading healthcare solutions provider specializing in medical devices, consumables, and cutting-edge healthcare technologies with local manufacturing capabilities.",
   keywords:
     "healthcare solutions, medical devices, central venous catheters, hemodialysis sets, chest drainage systems, medical manufacturing",
-  authors: [{ name: "TOP ADVANCED" }],
+  authors: [{ name: "TOP ADVANCED MEDICAL" }],
 };
 
 export default function RootLayout({

@@ -32,8 +32,8 @@ const Quality = () => {
         </h2>
 
         <p className="text-center text-lg text-gray-700 mb-12 max-w-4xl mx-auto">
-          TOP ADVANCED is committed to excellence in quality and safety. Our
-          operations follow international standards including:
+          TOP ADVANCED MEDICAL is committed to excellence in quality and safety.
+          Our operations follow international standards including:
         </p>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">

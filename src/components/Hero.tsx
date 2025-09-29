@@ -11,14 +11,14 @@ const Hero = () => {
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <Image
           src="/logo.png"
-          alt="TOP ADVANCED Logo"
+          alt="TOP ADVANCED MEDICAL Logo"
           width={100}
           height={100}
           className="mx-auto mb-6"
         />
         <div className="max-w-4xl mx-auto">
           <h1 className="font-montserrat font-bold text-4xl md:text-5xl lg:text-6xl mb-6">
-            TOP ADVANCED
+            TOP ADVANCED MEDICAL
           </h1>
           <p className="text-lg md:text-xl lg:text-2xl mb-8 opacity-90 leading-relaxed">
             Healthcare solutions provider specializing in high-quality medical

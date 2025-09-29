@@ -49,7 +49,7 @@ const Header = () => {
           >
             <Image
               src="/logo.png"
-              alt="TOP ADVANCED Logo"
+              alt="TOP ADVANCED MEDICAL Logo"
               width={80}
               height={80}
               className="mr-3"
@@ -57,7 +57,7 @@ const Header = () => {
                 e.currentTarget.style.display = "none";
               }}
             />
-            TMD
+            TAM
           </a>
 
           {/* Desktop Navigation */}

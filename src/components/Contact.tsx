@@ -45,15 +45,15 @@ const Contact = () => {
               </h3>
               <p style={{ marginBottom: "2rem" }}>
                 Ready to partner with us for your healthcare solutions needs?
-                Contact our team to discuss how TOP ADVANCED can support your
-                organization.
+                Contact our team to discuss how TOP ADVANCED MEDICAL can support
+                your organization.
               </p>
               <div style={{ marginBottom: "1rem" }}>
                 <i
                   className="fas fa-envelope"
                   style={{ color: "var(--primary-blue)", marginRight: "10px" }}
                 ></i>
-                <span>info@topadvanced.com</span>
+                <span>Info@topadvanced.sa</span>
               </div>
               <div style={{ marginBottom: "1rem" }}>
                 <i

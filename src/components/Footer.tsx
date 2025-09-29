@@ -31,8 +31,8 @@ const Footer = () => {
 
         <div className="border-t border-gray-600 pt-8">
           <p className="text-gray-300">
-            &copy; 2025 TOP ADVANCED. All rights reserved. Healthcare Solutions
-            Provider.
+            &copy; 2025 TOP ADVANCED MEDICAL. All rights reserved. Healthcare
+            Solutions Provider.
           </p>
         </div>
       </div>
