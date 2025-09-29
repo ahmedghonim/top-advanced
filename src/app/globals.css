@@ -1,26 +1,84 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --primary-blue: #00B4F0;
+  --dark-navy: #001F3F;
+  --white: #FFFFFF;
+  --black: #000000;
+  --light-gray: #F8F9FA;
+  --medium-gray: #6C757D;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: var(--font-roboto), sans-serif;
+    line-height: 1.6;
+    color: var(--dark-navy);
+    background-color: var(--white);
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-montserrat), sans-serif;
+    font-weight: 600;
+    line-height: 1.2;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer components {
+  .gradient-bg {
+    background: linear-gradient(135deg, var(--dark-navy) 0%, #003366 100%);
+  }
+  
+  .gradient-overlay {
+    background: linear-gradient(45deg, var(--primary-blue) 0%, transparent 70%);
+    opacity: 0.1;
+  }
+  
+  .gradient-button {
+    background: linear-gradient(45deg, var(--primary-blue), #0099CC);
+    box-shadow: 0 4px 15px rgba(0, 180, 240, 0.3);
+  }
+  
+  .gradient-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 180, 240, 0.4);
+  }
+  
+  .section-divider::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(45deg, var(--primary-blue), #0099CC);
+    border-radius: 2px;
+  }
+}
+
+@layer utilities {
+  .text-primary-blue {
+    color: var(--primary-blue);
+  }
+  
+  .text-dark-navy {
+    color: var(--dark-navy);
+  }
+  
+  .bg-primary-blue {
+    background-color: var(--primary-blue);
+  }
+  
+  .bg-dark-navy {
+    background-color: var(--dark-navy);
+  }
+  
+  .bg-light-gray {
+    background-color: var(--light-gray);
+  }
 }

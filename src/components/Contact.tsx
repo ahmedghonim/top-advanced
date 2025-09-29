@@ -1,0 +1,111 @@
+"use client";
+
+import { useState } from "react";
+
+const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+
+    if (formData.name && formData.email && formData.message) {
+      alert("Thank you for your message! We will get back to you soon.");
+      setFormData({ name: "", email: "", message: "" });
+    } else {
+      alert("Please fill in all required fields.");
+    }
+  };
+
+  return (
+    <section id="contact" className="py-20 bg-light-gray">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-center text-dark-navy mb-12 relative section-divider">
+          Contact Us
+        </h2>
+
+        <div className="max-w-2xl mx-auto">
+          <form
+            onSubmit={handleSubmit}
+            className="bg-white p-8 md:p-12 rounded-2xl shadow-xl"
+          >
+            <div className="mb-6">
+              <label
+                htmlFor="name"
+                className="block text-dark-navy font-medium mb-2"
+              >
+                Full Name
+              </label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                required
+                className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-primary-blue focus:outline-none transition-colors duration-300"
+              />
+            </div>
+
+            <div className="mb-6">
+              <label
+                htmlFor="email"
+                className="block text-dark-navy font-medium mb-2"
+              >
+                Email Address
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                required
+                className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-primary-blue focus:outline-none transition-colors duration-300"
+              />
+            </div>
+
+            <div className="mb-8">
+              <label
+                htmlFor="message"
+                className="block text-dark-navy font-medium mb-2"
+              >
+                Message
+              </label>
+              <textarea
+                id="message"
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
+                required
+                rows={5}
+                className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-primary-blue focus:outline-none transition-colors duration-300 resize-vertical"
+              />
+            </div>
+
+            <button
+              type="submit"
+              className="w-full gradient-button text-white py-4 px-8 rounded-full font-semibold text-lg transition-all duration-300 hover:scale-105"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Contact;
