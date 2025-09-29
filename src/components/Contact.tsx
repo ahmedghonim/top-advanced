@@ -60,7 +60,8 @@ const Contact = () => {
                   className="fas fa-phone"
                   style={{ color: "var(--primary-blue)", marginRight: "10px" }}
                 ></i>
-                <span>+966 54 345 6789</span>
+
+                <span>+966 50 927 2437</span>
               </div>
               <div>
                 <i
